@@ -1,2 +1,1 @@
-# dm125-android-project
-Projeto Android
+Projeto feito na disciplina DM-125

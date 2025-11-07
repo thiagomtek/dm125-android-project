@@ -1,0 +1,18 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MyTasks" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorAccent">@color/orange</item>
+        <item name="colorSecondary">@color/orange</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+    <style name="Theme.MyTasks" parent="Base.Theme.MyTasks">
+        <item name="colorPrimary">@color/minha_cor_primaria</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/minha_cor_secundaria</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:colorBackground">@color/minha_cor_de_fundo</item>
+    </style>
+</resources>

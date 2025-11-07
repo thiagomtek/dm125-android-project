@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue">#1976D2</color>
+    <color name="orange">#F57C00</color>
+    <color name="green">#388E3C</color>
+    <color name="black">#FF000000</color>
+
+    <color name="white">#FFF</color>
+
+    <color name="ic_launcher_background">@color/blue</color>
+    <color name="task_green">#4CAF50</color>
+    <color name="task_blue">#2196F3</color>
+    <color name="task_yellow">#FFEB3B</color>
+    <color name="task_red">#F44336</color>
+
+    <color name="minha_cor_primaria">#1A5276</color>
+    <color name="minha_cor_secundaria">#F39C12</color>
+    <color name="minha_cor_de_fundo">#ECF0F1</color>
+</resources>

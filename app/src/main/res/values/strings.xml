@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Minhas Tarefas</string>
+
+    <string name="title">Título</string>
+    <string name="description">Description</string>
+    <string name="date">Data</string>
+    <string name="time">Hora</string>
+    <string name="save">Salvar</string>
+
+    <string name="title_required">Título é obrigatório</string>
+
+    <string name="server_error">Não foi possível conectar ao servidor</string>
+    <string name="empty_list">Não existem tarefas cadastradas.\nClique no botão abaixo para cadastrar uma nova tarefa.</string>
+
+    <string name="permission">Permissões</string>
+    <string name="notification_permission_rationale">O aplicativo irá enviar notificações para você quando houver tarefas pendentes.</string>
+
+    <string name="preferences">Configurações</string>
+    <string name="daily_notification">Notificações diárias</string>
+    <string name="daily_notification_on">Você receberá uma notificação diária.</string>
+    <string name="daily_notification_off">Você não receberá a notificação diária.</string>
+
+    <string name="mark_completed">Marcar como concluída</string>
+
+    <string name="create_error">Não foi possível criar a tarefa.</string>
+    <string name="update_error">Não foi possível atualizar a tarefa</string>
+
+    <string name="load_task_error">Não foi possível carregar os dados da tarefa.</string>
+    <string name="time_format_error">Formato inválido (use: HH:mm)</string>
+    <string name="date_format_error">Data inválida</string>
+
+    <string name="date_format_title">Formato da data</string>
+    <string name="date_format_summary">Escolha como a data é exibida no card</string>
+
+    <string name="date_format_short">Números (ex: 01/01/2024)</string>
+    <string name="date_format_long">Por extenso (ex: 01 de janeiro de 2024)</string>
+
+    <string name="date_format_value_short">short</string>
+    <string name="date_format_value_long">long</string>
+
+    <string name="delete_confirmation_title">Confirmar Exclusão</string>
+    <string name="delete_confirmation_message">Tem certeza que deseja apagar a tarefa \"%1$s\"?</string>
+    <string name="delete_confirmation_yes">Sim</string>
+
+    <string name="default_web_client_id">236970444187-gk49cm0ccv87uoqu78tbs0sf5jiruuqi.apps.googleusercontent.com</string>
+</resources>
