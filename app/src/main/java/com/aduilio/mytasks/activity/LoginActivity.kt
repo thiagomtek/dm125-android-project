@@ -19,7 +19,7 @@ class LoginActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityLoginBinding
 
-    // usa FirebaseAuth.getInstance() em vez do KTX
+
     private val auth: FirebaseAuth by lazy { FirebaseAuth.getInstance() }
 
     private lateinit var googleSignInClient: GoogleSignInClient

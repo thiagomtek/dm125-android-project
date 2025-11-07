@@ -1,13 +1,14 @@
 package com.aduilio.mytasks.adapter
 
+import android.view.View // Importe o View
 import androidx.preference.PreferenceManager
 import androidx.recyclerview.widget.RecyclerView
 import com.aduilio.mytasks.R
 import com.aduilio.mytasks.databinding.ListItemBinding
 import com.aduilio.mytasks.entity.Task
 import com.aduilio.mytasks.listener.ClickListener
-import java.time.LocalDate // Importe o LocalDate
-import java.time.format.DateTimeFormatter // Importe o DateTimeFormatter
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
 import java.util.Locale
 
 class ItemViewHolder(
@@ -17,15 +18,18 @@ class ItemViewHolder(
 
     fun setData(task: Task) {
         binding.tvTitle.text = task.title
-
         binding.tvDate.text = formatTaskDate(task)
 
+        if (task.description.isNullOrBlank()) {
+
+            binding.tvDescription.visibility = View.GONE
+        } else {
+
+            binding.tvDescription.visibility = View.VISIBLE
+            binding.tvDescription.text = task.description
+        }
         val colorRes = getTaskColor(task)
-
-
         binding.root.setBackgroundResource(colorRes)
-
-
 
         binding.root.setOnClickListener {
             listener.onClick(task)
@@ -38,7 +42,6 @@ class ItemViewHolder(
             }
         }
     }
-
 
     private fun formatTaskDate(task: Task): String {
         if (task.date == null) {
@@ -58,7 +61,6 @@ class ItemViewHolder(
         val formattedDate = task.date.format(dateFormatter)
 
         val formattedTime = if (task.time != null) {
-
             val timeFormatter = DateTimeFormatter.ofPattern("HH:mm", Locale.getDefault())
             task.time.format(timeFormatter)
         } else {
@@ -72,6 +74,7 @@ class ItemViewHolder(
         }
     }
 
+
     private fun getTaskColor(task: Task): Int {
         if (task.completed) {
             return R.color.task_green
@@ -84,12 +87,8 @@ class ItemViewHolder(
         val today = LocalDate.now()
 
         return when {
-
             task.date.isBefore(today) -> R.color.task_red
-
-
             task.date.isEqual(today) -> R.color.task_yellow
-
             else -> R.color.task_blue
         }
     }
